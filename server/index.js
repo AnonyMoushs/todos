@@ -9,7 +9,7 @@ const PORT = 3001
 const FoodModel = require("./models/food")
 
 app.use(express.json());
-aapp.use(cors(
+app.use(cors(
 
   {
     origin: ["https://todos-5c69-rfpbwlahk-anonymoushs.vercel.app"],
