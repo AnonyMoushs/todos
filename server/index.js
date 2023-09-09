@@ -14,7 +14,7 @@ app.use(cors(
   {
     origin: ["https://todos-5c69-rfpbwlahk-anonymoushs.vercel.app"],
     methods: ["POST", "GET", "DELETE", "PUT"],
-    credentials: true
+    
   }
 
 ));
