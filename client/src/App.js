@@ -23,7 +23,7 @@ function App() {
 
   const submit = () => {
 
-    Axios.post("https://test-1kxwdortm-francesdonz23-gmailcom.vercel.app/foods", details).then(() => {
+    Axios.post("https://todos-nqj0dkbhn-anonymoushs.vercel.app/foods", details).then(() => {
       console.log("submit success")
     })
 
@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
 
-    Axios.get("https://test-1kxwdortm-francesdonz23-gmailcom.vercel.app/getData").then((response) => {
+    Axios.get("https://todos-nqj0dkbhn-anonymoushs.vercel.app/getData").then((response) => {
 
       setContainer(response.data)
       
