@@ -9,7 +9,15 @@ const PORT = 3001
 const FoodModel = require("./models/food")
 
 app.use(express.json());
-app.use(cors());
+aapp.use(cors(
+
+  {
+    origin: ["https://todos-5c69-rfpbwlahk-anonymoushs.vercel.app"],
+    methods: ["POST", "GET", "DELETE", "PUT"],
+    credentials: true
+  }
+
+));
 
 
 mongoose.connect("mongodb+srv://francesdonz23:slOncjKIXw8b79fE@todo.8pl4lvv.mongodb.net/food?retryWrites=true&w=majority", {
